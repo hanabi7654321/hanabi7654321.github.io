@@ -1,0 +1,245 @@
+body {
+  font-family: "TT Norms W01 Regular", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, sans-serif;;  
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+.contents {
+  margin: 0 auto;
+  padding: 20px 0;
+
+}
+
+.containter {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1100px;
+  text-align: center;
+}
+
+
+/* 固定ヘッダー */
+.site-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  border:1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.logo {
+  padding-left: 20px; 
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+
+
+/* ここからコンテンツ */
+
+.welcome {
+  width: 100%;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.containter {
+  position: relative;
+}
+
+.welcome-words {
+  position: absolute;
+  top: 200px;
+}
+
+.welcome-words {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+}
+
+.welcom-words img {
+  width: auto;
+  height: 100%;
+}
+
+/* アニメーション */
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.welcome-words img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.welcome-words img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+.contents {
+  margin-top: 100px;
+}
+
+.content-wrap {
+  background-color: #ede8e4; 
+
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content-title {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.about-me > h2 {
+  text-align: center;
+}
+
+.sikill {
+  padding: 20px;
+}
+
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-inner {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skill-inner > h3 {
+  text-align: center;
+}
+
+.fab-container {
+  justify-content: center;
+  text-align: center;
+}
+
+.skill-inner > p {
+  text-align: center;
+}
+
+
+
+.wrapper {
+  display: flex;
+  height: 350px;
+  
+}
+
+.h3-wrap {
+  border-bottom: 1px solid rgba(201, 200, 200, 0.8);
+  margin-bottom: 30px;
+}
+
+
+
+.works-list {
+  display: wrap;
+}
+
+.work-inner01  {
+  position: relative;
+  margin: 40px auto;
+  height: 400px;
+}
+
+.work-container {  
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 340px;
+  
+}
+
+.work-discription01 {
+  position: absolute;
+  top: 80px;
+  left: 400px;
+  display: inline-block;
+  width: 200px;
+  height: 180px;
+  padding: 20px 10px;
+  background-color: rgba(247, 247, 247, 0.5);
+}
+
+.work-img01 {
+  position: absolute;
+  top: 5\80px;
+  left: 0;
+  width: auto;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;  
+  
+}
+
+
+
+.work-img02 { 
+  width: 380px;
+  height: auto;
+  margin: 0;
+  padding: 0px;
+  border: 1px solid #ccc  
+}
+
+
+
+
+/* フッター */
+.site-footer {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.site-footer a {
+  color: white;
+}
