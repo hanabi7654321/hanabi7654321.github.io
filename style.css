@@ -145,7 +145,8 @@ li {
 
 
 
-.sikill {
+.skill {
+  display: block;
   padding: 20px;
 }
 
@@ -170,6 +171,10 @@ li {
   text-align: center;
 }
 
+.fab {
+  
+}
+
 .skill-inner > p {
   text-align: center;
 }
@@ -179,6 +184,10 @@ li {
 
   .content {
     display: flex;
+    flex-direction: column;
+  }
+
+  .skill-list {
     flex-direction: column;
   }
 
@@ -234,35 +243,44 @@ li {
 
 @media (max-width:768px) {
   .box {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
-  .box:nth-child(even) {
-    flex-direction: row-reverse;
-  }
+
   
   .text {
-    text-align: left
+    text-align: left;
+    font-size: 14px;
   }
 
   .box:nth-child(even) .text {
     text-align: right;
   }
 
-  .work-pic {
-    width: 30%    
+  .box:nth-child(odd) .text {
+    text-align: left;
   }
 
-  .pict img {
+  .work-pic {
+    width: 40%    
+  }
+
+  .work-pic img {
     width: 100%;
     height:auto;
     border: 1px solid #ccc  
   }
 
-  .box:nth-child(even) .pict {
+  .box:nth-child(even) .work-pic {
+    text-align: right;
     margin-left: 0;
     margin-right: 3%;
+  }
+
+  .box:nth-child(odd) .work-pic {
+    margin-left: 0;
+    margin-left: 3%;
   }
 }
   
@@ -276,11 +294,46 @@ li {
 /* フッター */
 .site-footer {
   margin: 0;
-  padding: 0;
+  padding: 20px, 40px, 40px, 40px;
   background-color: black;
   color: white;
 }
 
+.footer-inner {
+  text-align: left;
+}
+
 .site-footer a {
+  display: flex;
   color: white;
+  padding: 20px;
+}
+
+.footer-logo {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-links {
+  padding: 8px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.fab {
+  text-align: center;
+  padding-right: 8px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+footer > a {
+  text-align: center;
+  padding: 12px;
 }
