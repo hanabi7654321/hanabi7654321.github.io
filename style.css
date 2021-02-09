@@ -131,9 +131,9 @@ li {
   padding-left: 20px;
 }
 
-.about-me > h2 {
+/* .about-me > h2 {
   text-align: center;
-}
+} */
 
 .sikill {
   padding: 20px;
@@ -148,6 +148,7 @@ li {
 .skill-inner {
   margin: 0 auto;
   padding: 20px;
+  min-width: 150px;
 }
 
 .skill-inner > h3 {
