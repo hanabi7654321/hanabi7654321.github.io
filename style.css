@@ -166,69 +166,78 @@ li {
 
 
 
-.wrapper {
-  display: flex;
-  height: 350px;
-  
+/* 作品セクション */
+
+.content {
+
+  margin-bottom: 40px;
 }
 
-.h3-wrap {
+.box {
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+}
+
+.text > h3 {
+  margin: 0;
   border-bottom: 1px solid rgba(201, 200, 200, 0.8);
   margin-bottom: 30px;
 }
 
 
-
-.works-list {
-  display: wrap;
+.work-pic {
+  width: 100%;
+  margin-left: 20%;
+  min-height: 0%;
 }
 
-.work-inner01  {
-  position: relative;
-  margin: 40px auto;
-  height: 400px;
-}
-
-.work-container {  
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  width: 340px;
-  
-}
-
-.work-discription01 {
-  position: absolute;
-  top: 80px;
-  left: 400px;
-  display: inline-block;
-  width: 200px;
-  height: 180px;
-  padding: 20px 10px;
-  background-color: rgba(247, 247, 247, 0.5);
-}
-
-.work-img01 {
-  position: absolute;
-  top: 5\80px;
-  left: 0;
-  width: auto;
-  height: 280px;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #ccc;  
-  
-}
-
-
-
-.work-img02 { 
-  width: 380px;
-  height: auto;
-  margin: 0;
-  padding: 0px;
+.work-pic img {
+  max-width: 300px;
+  height:auto;
   border: 1px solid #ccc  
 }
+
+.box:nth-child(even) {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+@media (max-width:768px) {
+  .box {
+    flex-direction: column;
+  }
+  .box:nth-child(even) {
+    flex-direction: column;
+  }
+  .text {
+    text-align: center;
+  }
+  .box:nth-child(even) .text {
+    text-align: center;
+  }
+  .work-pic {
+    width:100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .box:nth-child(even) .work-pic {
+    margin-left: 0;
+    margin-right: 0%;
+  }
+  .work-pic img {
+    width:100%;
+    height:auto;
+    border: 1px solid #ccc  
+  }
+}
+
 
 
 

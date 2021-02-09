@@ -16,8 +16,8 @@
       <nav class="grobal-nav">        
         <ul class="nav-list">
           <li class="nav-item"><a href="#about-me">About Me</a></li>
-          <li class="nav-item"><a href="">Works</a></li>
-          <li class="nav-item"><a href="">Contact</a></li>
+          <li class="nav-item"><a href="#works">Works</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -83,59 +83,48 @@
         </div>
       </div>
 
+      <!-- 作品セクション -->
       <div class="container">
         <div id="works" class="content-wrap">
           <h1 class="content-title">Works</h1>
         </div>
+        
         <div class="content">
           <h2>Works</h2>
-          <ul class="works-list">            
-            <li class="work">
-              <div class="work-inner01">
-                <div class="h3-wrap">
-                  <h3>Document site</h3>
-                </div>
-                
-                <div class="wapper">
-                  <div class="work-container">
-                    <a href="" class="work-link"><img src="img/document-site.jpg" alt="document-site-img" class="work-img01"></a>
-                  </div>
-                  <div class="work-discription01">
-                    <p>HTML、CSSでドキュメントサイト風Webページを作成しました。</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="work">
-              <div class="work-inner02">
-                <div class="h3-wrap">
-                  <h3>Web App</h3>
-                </div>
-                
-                <div class="work-container">
-                  <a href="" class="work-link"><img src="img/js-quiz.jpg" alt="webapp-img" class="work-img02"></a>
-                </div>
-                <div class="work-discription">
-                  <p>JavaScriptで作成したクイズアプリです。デザインはBootstrapを使用。</p>
-                </div>
-              </div>
-            </li>
 
-            <li class="work">
-              <div class="work-inner02">
-                <div class="h3-wrap">
-                  <h3>Web App</h3>
-                </div>
-                
-                <div class="work-container">
-                  <a href="" class="work-link"><img src="img/lucky-animal.jpg" alt="web-appluckyAnimal-img" class="work-img02"></a>
-                </div>
-                <div class="work-discription">
-                  <p>node.jsとExpressを使用して、今日のラッキーアニマルを占うおみくじアプリを実装しました。サーバーはherokuを使って公開しています。</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <!-- 作品1 -->
+          <div class="box">
+            <div class="text">
+              <h3>Document site</h3>
+              <p>HTML、CSSでドキュメントサイト風Webページを作成しました。</p>
+            </div>
+            <div class="work-pic">
+              <a href="" class="work-link"><img src="img/document-site.jpg" alt="document-site-img" class="work-img"></a>
+            </div>
+          </div>
+
+          <!-- 作品2 -->
+          <div class="box">
+            <div class="text">
+              <h3>Quiz App</h3>
+              <p>JavaScriptで作成したクイズアプリです。デザインはBootstrapを使用。</p>
+            </div>
+            <div class="work-pic">
+              <a href="" class="work-link"><img src="img/js-quiz.jpg" alt="webapp-img" class="work-img"></a>
+            </div>
+          </div>
+
+          <!-- 作品3 -->
+          <div class="box">
+            <div class="text">
+              <h3>Web App</h3>
+              <p>node.jsとExpressを使用して、今日のラッキーアニマルを占うおみくじアプリを実装しました。サーバーはherokuを使って公開しています。</p>
+            </div>
+            <div class="work-pic">
+              <a href="" class="work-link"><img src="img/lucky-animal.jpg" alt="web-appluckyAnimal-img" class="work-img"></a>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -144,7 +133,7 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <h2 class="footer-logo">Contact</h2>
+        <h2 id="contact" class="footer-logo">Contact</h2>
         <div class="footer-nav">
           <ul class="footer-list">
             <li class="footer-item"><a href="">About Me</a></li>
