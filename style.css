@@ -15,19 +15,6 @@ li {
   list-style: none;
 }
 
-/* .contents {
-  margin: 0 auto;
-  padding: 20px 0;
-
-} */
-
-/* .containter {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1100px;
-  text-align: center;
-} */
 
 
 /* 固定ヘッダー */
@@ -42,16 +29,53 @@ li {
   background-color: rgba(255, 255, 255, 0.8); 
 }
 
+.logo-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-btn:hover {
+  color: #c9ada7;
+}
+
+.button {
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  line-height: 50px;
+  font-size: 24px;
+  padding: 4px 20px;
+  margin: 4px 8px;
+}
+
+.button:hover {
+  background-color: #fff;
+  border-color: #f2e9e4;  
+  color: #c9ada7;
+  transition: 1s;
+}
+
+
+
 .logo {
   padding-left: 20px; 
 }
 
 .nav-list {
   display: flex;
+  margin-right: 20px;
 }
 
 .nav-item {
   padding-right: 40px;
+  padding: 16px 24px;
+}
+
+.nav-item:hover {
+  background-color: #c9ada7;
+  transition: 1s;
+  font-weight: 400;
+  box-shadow: 2px 2px 4px #9a8c98;
 }
 
 .notice {
@@ -171,9 +195,6 @@ li {
   text-align: center;
 }
 
-.fab {
-  
-}
 
 .skill-inner > p {
   text-align: center;
