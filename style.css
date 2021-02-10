@@ -185,7 +185,7 @@ li {
   padding: 10px 20px;
   min-width: 150px;
   height: 350px;
-  background: #b4a2b1;  
+  border: 1px solid#dad2d8;  
   box-shadow: 2px 2px 4px #333;
   transform: scale(1);
   transition: .3s ease-in-out;
@@ -245,6 +245,7 @@ li {
   .content {
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
   }
 
   .skill-list {
@@ -265,73 +266,79 @@ li {
 /* 作品セクション */
 
 .content {
-  padding: 20px;
-  
+  padding: 20px;  
 }
 
-.box {
-  display:flex;
-  flex-direction: column;
+.content h2 {
   margin-bottom: 40px;
 }
 
+.content-title {
+  margin-bottom: 40px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+  max-width: 720px;
+  justify-content: space-between;
+}
+.box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .text {
-  width: 100%;
+  display: inline-block;
+  max-width: 280px;
   text-align: center;
 }
 
 .text > h3 {
   margin: 0;
-  border-bottom: 1px solid rgba(201, 200, 200, 0.8);
+  border-bottom: 4px solid #ede8e4;
   margin-bottom: 30px;
 }
 
 
 .work-pic {
-  width: 100%;
+  display: inline-block;
+  width: 320px;
   text-align: center;
   min-height: 0%;
   overflow: hidden;
 }
 
 .work-pic img {
+  margin-right: 0;
   max-width: 300px;
   height:auto;
-  border: 1px solid #ccc  
+  border: 1px solid #ccc;
+  box-shadow : 10px 10px 10px #ede8e4; 
 }
 
 .work-pic img:hover {
-  box-shadow: 4px 4px 8px gray;
+  box-shadow: 10px 10px 20px gray;
   transition: 1s;
 }
 
-.box:nth-child(even) {
-  background-color: #f1f1f1;
-  padding: 20px;
-}
+
 
 
 
 @media (max-width:768px) {
   .box {
-    flex-direction: column;
     justify-content: space-between;
   }
 
 
   
-  .text {
-    text-align: left;
+  .text {    
+    width: 200px;
     font-size: 14px;
   }
 
-  .box:nth-child(even) .text {
-    text-align: right;
-  }
 
-  .box:nth-child(odd) .text {
-    text-align: left;
-  }
 
   .work-pic {
     width: 40%    
@@ -343,15 +350,11 @@ li {
     border: 1px solid #ccc  
   }
 
-  .box:nth-child(even) .work-pic {
-    text-align: right;
-    margin-left: 0;
-    margin-right: 3%;
-  }
+
+    
 
   .box:nth-child(odd) .work-pic {
-    margin-left: 0;
-    margin-left: 3%;
+    
   }
 }
   
