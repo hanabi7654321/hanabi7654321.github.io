@@ -72,7 +72,7 @@ li {
 }
 
 .nav-item:hover {
-  background-color: #c9ada7;
+  background-color: #b4a2b1;
   transition: 1s;
   font-weight: 400;
   box-shadow: 2px 2px 4px #9a8c98;
@@ -117,7 +117,7 @@ li {
   height: 100%;
 }
 
-/* アニメーション */
+/* 白文字が流れるアニメーション */
 @keyframes loop {
   0% {
     transform: translateX(100%);
@@ -171,7 +171,7 @@ li {
 
 .skill {
   display: block;
-  padding: 20px;
+  padding: 20px;  
 }
 
 
@@ -182,23 +182,45 @@ li {
 
 .skill-inner {
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px 20px;
   min-width: 150px;
+  height: 350px;
+  background: #b4a2b1;  
+  box-shadow: 2px 2px 4px #333;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.skill-inner:hover {
+  transform: scale(1.1);
 }
 
 .skill-inner > h3 {
-  text-align: center;
+  text-align: center; 
 }
 
 .fab-container {
   justify-content: center;
   text-align: center;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;  
 }
 
+.fab {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
 
 .skill-inner > p {
   text-align: center;
 }
+
+
 
 
 @media (max-width:768px) {
@@ -248,6 +270,7 @@ li {
   width: 100%;
   text-align: center;
   min-height: 0%;
+  overflow: hidden;
 }
 
 .work-pic img {
@@ -256,10 +279,16 @@ li {
   border: 1px solid #ccc  
 }
 
+.work-pic img:hover {
+  box-shadow: 4px 4px 8px gray;
+  transition: 1s;
+}
+
 .box:nth-child(even) {
   background-color: #f1f1f1;
   padding: 20px;
 }
+
 
 
 @media (max-width:768px) {
