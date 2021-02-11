@@ -172,6 +172,7 @@ li {
 .skill {
   display: inline-block;
   padding: 20px;  
+  margin-bottom: 80px;
 }
 
 
@@ -266,7 +267,8 @@ li {
 /* 作品セクション */
 
 .content {
-  padding: 20px;  
+  margin: 0 auto;
+  padding: 0;  
 }
 
 .content h2 {
@@ -280,13 +282,44 @@ li {
 .box {
   display: flex;
   flex-direction: row;
-  margin-bottom: 80px;
+  /* padding-bottom: 80px; */
   max-width: 720px;
   justify-content: space-between;
+  min-height: 400px;
+  margin: 20px;
+  /* フェードインアニメーション */
+  animation-name: fadeleft;
+  animation-duration: 3s;
 }
+
+@keyframes fadeleft {
+  from {
+      opacity: 0;
+       transform: translateX(-250px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
 .box:nth-child(even) {
   flex-direction: row-reverse;
+  animation-name: faderight;
+  animation-duration: 3s;
 }
+
+@keyframes faderight {
+  from {
+      opacity: 0;
+      transform: translateX(250px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
 
 .text {
   display: inline-block;
@@ -350,17 +383,7 @@ li {
     border: 1px solid #ccc  
   }
 
-
-    
-
-  .box:nth-child(odd) .work-pic {
-    
-  }
-}
-  
- 
-    
- 
+} 
 
 
 
